@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Benm-vindo ao Exercício de JavaScript</h1>
+
+    <label for="nomeInput">Digite seu Nome: </label>
+    <input type="text" id="nomeInput" placeholder="Digite seu nome...">
+
+    <button onclick="exibirDados()">Mostrar Informações</button>
+
+    <p id="Dados"></p>
+
+    <script>
+        function exibirDados() {
+            let nome = "Qual é o seu nome?"
+            nome = document.getElementById("nomeInput").value;
+
+            let idade = prompt ("Qual sua idade?");
+            document.getElementById("Dados").innerText = "Olá " + nome + " você tem " + idade + " anos" ;
+        }
+    </script>
+</body>
+</html>
